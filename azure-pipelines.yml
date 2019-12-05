@@ -25,4 +25,6 @@ steps:
     APISecret: 'QEoyIVNSVGFaMHZXcnhuaiRZMkkwaUFqRzdHVnlj0'
     EntitlementPreference: '2'
     PurchaseEntitlements: false
-    PreferRemediation: false
+    RemediationScanPreference: '0'
+    InProgressScanActionType: '0'
+    PolicyFailAction: '0'
