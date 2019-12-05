@@ -23,8 +23,8 @@ steps:
     APIAuthenticationType: '1'
     APIKey: 'bdfc0fab-b317-4e06-980d-3ead5c762180'
     APISecret: 'J2psQUV3SGdZSnpHRE1TVTZTTDMtV0VhPDZCMTd50'
-    EntitlementPreference: '2'
+    EntitlementPreference: '1'
     PurchaseEntitlements: false
     RemediationScanPreference: '0'
-    InProgressScanActionType: '0'
+    InProgressScanActionType: '1'
     PolicyFailAction: '0'
