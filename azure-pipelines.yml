@@ -2,19 +2,6 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-- task: FortifyOnDemandStatic@5
-  inputs:
-    FortifyProjects: 'https://github.com/ukruthi/AzureTest.git'
-    BSIToken: 'eyJ0ZW5hbnRJZCI6MTgxMSwidGVuYW50Q29kZSI6ImtydXRoaXRlc3QiLCJyZWxlYXNlSWQiOjIxNzk5MSwicGF5bG9hZFR5cGUiOiJBTkFMWVNJU19QQVlMT0FEIiwiYXNzZXNzbWVudFR5cGVJZCI6Mjc0LCJ0ZWNobm9sb2d5VHlwZSI6Ii5ORVQiLCJ0ZWNobm9sb2d5VHlwZUlkIjoxLCJ0ZWNobm9sb2d5VmVyc2lvbiI6IjQuNyIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjE2LCJhdWRpdFByZWZlcmVuY2UiOiJBdXRvbWF0ZWQiLCJhdWRpdFByZWZlcmVuY2VJZCI6MiwiaW5jbHVkZVRoaXJkUGFydHkiOmZhbHNlLCJpbmNsdWRlT3BlblNvdXJjZUFuYWx5c2lzIjpmYWxzZSwicG9ydGFsVXJpIjoiaHR0cHM6Ly9hbXMuZm9ydGlmeS5jb20iLCJhcGlVcmkiOiJodHRwczovL2FwaS5hbXMuZm9ydGlmeS5jb20iLCJzY2FuUHJlZmVyZW5jZSI6IlN0YW5kYXJkIiwic2NhblByZWZlcmVuY2VJZCI6MX0='
-    APIAuthenticationType: '1'
-    APIKey: '5dbdf51d-dc71-462b-b30a-ebc9c4d1c0b1'
-    APISecret: 'QEoyIVNSVGFaMHZXcnhuaiRZMkkwaUFqRzdHVnlj0'
-    EntitlementPreference: '0'
-    InProgressScanActionType: '1'
-    RemediationScanPreference: '2'
-    PolicyFailAction: '1'
-    PurchaseEntitlements: false
-    PreferRemediation: false
 trigger:
 - master
 
@@ -29,3 +16,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: FortifyOnDemandStatic@5
+  inputs:
+    FortifyProjects: 'https://github.com/ukruthi/WebGoat.NET.git'
+    BSIToken: 'eyJ0ZW5hbnRJZCI6MTgxMSwidGVuYW50Q29kZSI6ImtydXRoaXRlc3QiLCJyZWxlYXNlSWQiOjIxNzk5MSwicGF5bG9hZFR5cGUiOiJBTkFMWVNJU19QQVlMT0FEIiwiYXNzZXNzbWVudFR5cGVJZCI6Mjc0LCJ0ZWNobm9sb2d5VHlwZSI6Ii5ORVQiLCJ0ZWNobm9sb2d5VHlwZUlkIjoxLCJ0ZWNobm9sb2d5VmVyc2lvbiI6IjQuNyIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjE2LCJhdWRpdFByZWZlcmVuY2UiOiJBdXRvbWF0ZWQiLCJhdWRpdFByZWZlcmVuY2VJZCI6MiwiaW5jbHVkZVRoaXJkUGFydHkiOmZhbHNlLCJpbmNsdWRlT3BlblNvdXJjZUFuYWx5c2lzIjpmYWxzZSwicG9ydGFsVXJpIjoiaHR0cHM6Ly9hbXMuZm9ydGlmeS5jb20iLCJhcGlVcmkiOiJodHRwczovL2FwaS5hbXMuZm9ydGlmeS5jb20iLCJzY2FuUHJlZmVyZW5jZSI6IlN0YW5kYXJkIiwic2NhblByZWZlcmVuY2VJZCI6MX0='
+    APIAuthenticationType: '1'
+    APIKey: '5dbdf51d-dc71-462b-b30a-ebc9c4d1c0b1'
+    APISecret: 'QEoyIVNSVGFaMHZXcnhuaiRZMkkwaUFqRzdHVnlj0'
+    EntitlementPreference: '2'
+    PurchaseEntitlements: false
+    PreferRemediation: false
