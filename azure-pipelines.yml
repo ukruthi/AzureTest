@@ -18,7 +18,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: FortifyOnDemandStatic@5
   inputs:
-    FortifyProjects: 'WebGoat Java'
+    FortifyProjects: 'http://https://github.com/ukruthi/WebGoatJava'
     BSIToken: 'eyJ0ZW5hbnRJZCI6ODUsInRlbmFudENvZGUiOiJlcXVpZmF4IiwicmVsZWFzZUlkIjoyMjcyMTgsInBheWxvYWRUeXBlIjoiQU5BTFlTSVNfUEFZTE9BRCIsImFzc2Vzc21lbnRUeXBlSWQiOjI4MywidGVjaG5vbG9neVR5cGUiOiJKQVZBL0oyRUUiLCJ0ZWNobm9sb2d5VHlwZUlkIjo3LCJ0ZWNobm9sb2d5VmVyc2lvbiI6IjEuOCIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjEyLCJhdWRpdFByZWZlcmVuY2UiOiJNYW51YWwiLCJhdWRpdFByZWZlcmVuY2VJZCI6MSwiaW5jbHVkZVRoaXJkUGFydHkiOmZhbHNlLCJpbmNsdWRlT3BlblNvdXJjZUFuYWx5c2lzIjp0cnVlLCJwb3J0YWxVcmkiOiJodHRwczovL2Ftcy5mb3J0aWZ5LmNvbSIsImFwaVVyaSI6Imh0dHBzOi8vYXBpLmFtcy5mb3J0aWZ5LmNvbSIsInNjYW5QcmVmZXJlbmNlIjoiU3RhbmRhcmQiLCJzY2FuUHJlZmVyZW5jZUlkIjoxfQ=='
     APIAuthenticationType: '1'
     APIKey: 'bdfc0fab-b317-4e06-980d-3ead5c762180'
